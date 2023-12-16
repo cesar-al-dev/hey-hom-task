@@ -1,6 +1,7 @@
 
 # Task: Develop a Property Listing API using Django and Django REST Framework
 
+Note: For your convinience, I included the db.sqlite3 file in the repository, as well as enviroment variables, but they shouldn't be included in a production enviroment.
 
 ## Deployment
 
@@ -74,6 +75,9 @@ Example
 ```http
   PUT /properties/<id>
 ```
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to update |
 Example 
 
 ```
@@ -95,6 +99,9 @@ Example
 ```http
   DELETE /properties/<id>
 ```
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to delete |
 
 Expected response
 
